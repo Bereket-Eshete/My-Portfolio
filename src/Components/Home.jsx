@@ -1,18 +1,30 @@
 import React from "react";
-import profile from "../assets/profile.jpg";
+// import profile from "../assets/profile.jpg";
+import {
+  FaArrowDown,
+  FaArrowCircleRight,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaTelegram,
+} from "react-icons/fa";
 const Home = () => {
   return (
     <section class="home flex-center" id="home">
       <div class="home-container">
         <div class="media-icons">
           <a href="https://www.linkedin.com/in/michael-solomon-0250a8271/">
-            <i class="fab fa-linkedin"></i>
+            <FaLinkedin />
           </a>
           <a href="https://www.instagram.com/papa.boy_7">
-            <i class="fab fa-instagram"></i>
+            <FaInstagram />
           </a>
           <a href="https://github.com/Mckienzie7/">
-            <i class="fab fa-github"></i>
+            <FaGithub />
+          </a>
+
+          <a href="https://t.me/Backto2020">
+            <FaTelegram />
           </a>
         </div>
         <div class="info">
@@ -24,16 +36,17 @@ const Home = () => {
           </p>
           <br />
           <p>..................................</p>
-          <a href="mailto:michaelelsa12@gmail.com.com" class="btn">
-            Contact Me <i class="fas fa-arrow-circle-right"></i>
+          <a href="mailto:bereketeshete63@gmail.com" class="btn">
+            Contact Me <FaArrowCircleRight />
           </a>
         </div>
         <div class="home-img">
-          <img src={profile} alt="profile" />
+          <img src="" alt="profile" />
         </div>
       </div>
       <a href="#about" class="scroll-down">
-        Scroll Down <i class="fas fa-arrow-down"></i>
+        Scroll Down
+        <FaArrowDown color="#59d187" />
       </a>
     </section>
   );

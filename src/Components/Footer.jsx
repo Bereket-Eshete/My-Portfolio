@@ -1,6 +1,6 @@
 import { a, li } from "framer-motion/client";
 import React from "react";
-
+import { FaGithub, FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa";
 const Footer = () => {
   const Link = [
     { name: "Home", path: "#home" },
@@ -33,22 +33,22 @@ const Footer = () => {
           <ul>
             <li>
               <a href="https://www.instagram.com/papa.boy_7">
-                <i class="fab fa-instagram"></i>
+                <FaInstagram />
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/michael-solomon-0250a8271/">
-                <i class="fab fa-linkedin"></i>
+                <FaLinkedin />
               </a>
             </li>
             <li>
               <a href="https://t.me/Backto2020">
-                <i class="fab fa-telegram"></i>
+                <FaTelegram />
               </a>
             </li>
             <li>
               <a href="https://github.com/Mckienzie7/">
-                <i class="fab fa-github"></i>
+                <FaGithub />
               </a>
             </li>
           </ul>

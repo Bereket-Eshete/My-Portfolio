@@ -1,19 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { FaPaperPlane } from "react-icons/fa";
+import ScrollReveal from "scrollreveal";
 
 const Contact = () => {
+  useEffect(() => {
+    // ScrollReveal effect for the contact section
+    ScrollReveal().reveal(".contact-card", {
+      delay: 200,
+      origin: "bottom",
+      distance: "60px",
+      duration: 2500,
+      reset: true, // so the animation runs every time you scroll into view
+    });
+  }, []);
+
   return (
-    <section class="get-in-touch sub-section" id="contact">
-      <div class="container">
-        <div class="content flex-center">
-          <div class="contact-card flex-center">
-            <div class="title">
+    <section className="get-in-touch sub-section" id="contact">
+      <div className="container">
+        <div className="content flex-center">
+          <div className="contact-card flex-center">
+            <div className="title">
               <h4>Let's Talk</h4>
               <h3>About Your</h3>
               <h2>Next Projects</h2>
             </div>
-            <div class="contact-btn">
-              <a href="" class="btn">
-                Get in Touch <i class="fas fa-paper-plane"></i>
+            <div className="contact-btn">
+              <a href="#" className="btn">
+                Get in Touch <FaPaperPlane />
               </a>
             </div>
           </div>
