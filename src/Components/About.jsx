@@ -11,44 +11,44 @@ const About = () => {
       {
         delay: 300,
         origin: "left",
-        reset: true, // Ensures animation happens every time we scroll
+        reset: false, // Ensures animation happens every time we scroll
       }
     );
     ScrollReveal().reveal(".home .info h3, .home .info p, .about-info .btn", {
       delay: 400,
       origin: "right",
-      reset: true,
+      reset: false,
     });
     ScrollReveal().reveal(".home .info .btn", {
       delay: 500,
       origin: "bottom",
-      reset: true,
+      reset: false,
     });
     ScrollReveal().reveal(".media-icons i, .contact-left li", {
       delay: 200,
       origin: "left",
-      reset: true,
+      reset: false,
     });
     ScrollReveal().reveal(".home-img, .img, .about-img", {
       delay: 300,
       origin: "bottom",
-      reset: true,
+      reset: false,
     });
     ScrollReveal().reveal(".about , .description, .copy-rght", {
       delay: 400,
       origin: "right",
-      reset: true,
+      reset: false,
     });
     ScrollReveal().reveal(".about, .professional-list li", {
       delay: 300,
       origin: "right",
       interval: 100,
-      reset: true,
+      reset: false,
     });
     ScrollReveal().reveal(".skills-description, .contact-card", {
       delay: 500,
       origin: "left",
-      reset: true,
+      reset: false,
     });
     ScrollReveal().reveal(
       ".experience-card, .education, .portfolio .img-card",
@@ -56,14 +56,14 @@ const About = () => {
         delay: 600,
         origin: "bottom",
         interval: 100,
-        reset: true,
+        reset: false,
       }
     );
     ScrollReveal().reveal("footer .group", {
       delay: 300,
       origin: "top",
       interval: 100,
-      reset: true,
+      reset: false,
     });
   }, []); // Empty dependency array ensures this effect runs only once after the component mounts
 

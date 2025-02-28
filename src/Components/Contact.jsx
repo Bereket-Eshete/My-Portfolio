@@ -10,7 +10,7 @@ const Contact = () => {
       origin: "bottom",
       distance: "60px",
       duration: 2500,
-      reset: true, // so the animation runs every time you scroll into view
+      reset: false, // so the animation runs every time you scroll into view
     });
   }, []);
 

@@ -20,7 +20,7 @@
 }
 @font-face {
   font-family: "orator std";
-  src: url("../css/Orator-Std-Font.otf");
+  src: url("../src/Orator-Std-Font.otf");
 }
 
 * {
