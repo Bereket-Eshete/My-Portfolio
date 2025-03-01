@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 const Skill = () => {
+  useEffect(() => {
+    // ScrollReveal effect for the contact section
+    ScrollReveal().reveal(".contact-card", {
+      delay: 200,
+      origin: "bottom",
+      distance: "60px",
+      duration: 2500,
+      reset: false, // so the animation runs every time you scroll into view
+    });
+  }, []);
+
   const MySkill = [
     { name: "HTML", value: "85%" },
     { name: "CSS", value: "75%" },

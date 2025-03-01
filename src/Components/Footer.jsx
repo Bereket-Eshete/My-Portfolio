@@ -4,10 +4,10 @@ import { FaGithub, FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa";
 const Footer = () => {
   const Link = [
     { name: "Home", path: "#home" },
-    { name: "Skill", path: "#skill" },
+    { name: "Skill", path: "#skills" },
     { name: "About", path: "#about" },
     { name: "portfolio", path: "#portfolio" },
-    { name: "contact", path: "contact" },
+    { name: "contact", path: "#contact" },
   ];
   return (
     <footer>
@@ -32,22 +32,22 @@ const Footer = () => {
           <h3>Follow</h3>
           <ul>
             <li>
-              <a href="https://www.instagram.com/papa.boy_7">
+              <a href="https://www.instagram.com/bereket.eshete/">
                 <FaInstagram />
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/michael-solomon-0250a8271/">
+              <a href="https://www.linkedin.com/in/bereket-eshete-7171a0323">
                 <FaLinkedin />
               </a>
             </li>
             <li>
-              <a href="https://t.me/Backto2020">
+              <a href="https://t.me/@BereketEshete">
                 <FaTelegram />
               </a>
             </li>
             <li>
-              <a href="https://github.com/Mckienzie7/">
+              <a href="https://github.com/Bereket-Eshete">
                 <FaGithub />
               </a>
             </li>
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
       </div>
       <div class="footer-copyright group">
-        <p> ©️ Persus 2025 All rights reserved.</p>
+        <p> ©️ 2025 All rights reserved.</p>
       </div>
     </footer>
   );

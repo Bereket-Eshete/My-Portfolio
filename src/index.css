@@ -191,7 +191,8 @@ header.embed .nav-bar {
   border-radius: 300px 20px 200px 20px;
 }
 .home-container .home-img img {
-  height: 600px;
+  height: 550px;
+  width: 600px;
 }
 .home .scroll-down {
   margin-top: 100px;
@@ -876,7 +877,7 @@ footer a {
   }
 
   .home-container .home-img img {
-    width: 60%;
+    width: 75%;
     /*  */
     height: auto;
     transform: translate(80px, -180px);
@@ -955,4 +956,71 @@ body.modal-open {
   width: 100%;
   max-height: 500px;
   margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .portfolio-modal {
+    width: 90%; /* Make modal wider on small screens */
+    max-width: 95%; /* Prevent excessive stretching */
+    max-height: 85vh; /* Slightly taller for smaller screens */
+    padding: 15px;
+  }
+
+  .portfolio-modal-body {
+    max-height: 80vh;
+    padding: 10px;
+  }
+
+  .portfolio-modal-body h3 {
+    font-size: 18px; /* Reduce title font size */
+  }
+
+  .portfolio-modal-body p {
+    font-size: 14px; /* Reduce paragraph text size */
+    line-height: 1.5;
+  }
+
+  /* Resize images */
+  .portfolio-modal-body img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  /* Resize iframe for video */
+  .portfolio-modal-body iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Keep aspect ratio */
+  }
+
+  /* Fix close button for mobile */
+  .close-button {
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+  }
+}
+
+/* Even smaller screen adjustments */
+@media screen and (max-width: 480px) {
+  .portfolio-modal {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .portfolio-modal-body {
+    padding: 5px;
+  }
+
+  .portfolio-modal-body h3 {
+    font-size: 16px;
+  }
+
+  .portfolio-modal-body p {
+    font-size: 13px;
+  }
+
+  .close-button {
+    font-size: 22px;
+  }
 }

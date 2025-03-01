@@ -1,5 +1,5 @@
 import React from "react";
-// import profile from "../assets/profile.jpg";
+import profile1 from "../assets/profile1.jpg";
 import {
   FaArrowDown,
   FaArrowCircleRight,
@@ -13,17 +13,17 @@ const Home = () => {
     <section class="home flex-center" id="home">
       <div class="home-container">
         <div class="media-icons">
-          <a href="https://www.linkedin.com/in/michael-solomon-0250a8271/">
+          <a href="https://www.linkedin.com/in/bereket-eshete-7171a0323">
             <FaLinkedin />
           </a>
-          <a href="https://www.instagram.com/papa.boy_7">
+          <a href="https://www.instagram.com/bereket.eshete/">
             <FaInstagram />
           </a>
-          <a href="https://github.com/Mckienzie7/">
+          <a href="https://github.com/Bereket-Eshete">
             <FaGithub />
           </a>
 
-          <a href="https://t.me/Backto2020">
+          <a href="https://t.me/@BereketEshete">
             <FaTelegram />
           </a>
         </div>
@@ -41,12 +41,11 @@ const Home = () => {
           </a>
         </div>
         <div class="home-img">
-          <img src="" alt="profile" />
+          <img src={profile1} alt="profile" />
         </div>
       </div>
       <a href="#about" class="scroll-down">
-        Scroll Down
-        <FaArrowDown color="#59d187" />
+        Scroll Down <FaArrowDown color="#59d187" />
       </a>
     </section>
   );

@@ -25,7 +25,7 @@ const Contact = () => {
               <h2>Next Projects</h2>
             </div>
             <div className="contact-btn">
-              <a href="#" className="btn">
+              <a href="https://t.me/@BereketEshete" className="btn">
                 Get in Touch <FaPaperPlane />
               </a>
             </div>
