@@ -32,7 +32,8 @@ const Home = () => {
           <h2>I'm Bereket</h2>
           <h3>Full Stack Web Developer</h3>
           <p>
-            Creating Stunning websites for you with security, back-end and CI/CD
+            Building modern, Scalable web application with the latest
+            technologies To deliver seamless and efficient digital experiences.
           </p>
           <br />
           <p>..................................</p>

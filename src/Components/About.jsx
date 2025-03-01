@@ -79,12 +79,16 @@ const About = () => {
           <div className="about-info">
             <div className="description">
               <h4>
-                <span>Back-End Developer</span> based in <span>Ethiopia</span>
+                <span>Full-Stack Developer</span> based in <span>Ethiopia</span>
               </h4>
               <p>
-                I Design and Develop services for customers specializing in
-                creating stylish, modern websites, web services, and back-end
-                role.
+                I specialize in building Scalable, user-friendly and efficient
+                web application using latest tools and frameworks. with
+                expertise in both front-end and back-end development, l love
+                solving complex problems and crating seamless digital
+                experiences. My goal is to develop high-quality, impactful
+                software that enhances user experience and drives innovation.
+                Let's build something amazing together!.
               </p>
             </div>
             <ul className="proffesional-list">
