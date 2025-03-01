@@ -1,169 +1,137 @@
-import React from "react";
+import React, { useState } from "react";
+
+const projects = [
+  {
+    id: 1,
+    category: "Web Design",
+    title: "AirBnB Clone",
+    img: "image/hbhb-4.png",
+    detailsImg: "image/hbhb.png",
+    description:
+      "AirBnB clone is one of the portfolio projects of ALX. It features a backend with Python console, Flask API, JSON, MySQL, and Flask framework.",
+    link: "https://github.com/mckienzie7/AirBnB_clone_v4",
+  },
+  {
+    id: 2,
+    category: "Event Addis",
+    title: "Event Management Web App",
+    img: "image/evtemplate.png",
+    video: "https://www.youtube.com/embed/Uie77sbwWzE",
+    description:
+      "Event Addis is an event management platform that streamlines event creation, discovery, and participation for users in Addis Ababa. Event Addis is an event management platform that streamlines event creation, discovery, and participation for users in Addis Ababa.",
+    link: "https://github.com/mckienzie7/Event-Addis",
+  },
+  {
+    id: 3,
+    category: "Security",
+    title: "NCH Softwares-Hacking",
+    img: "image/chips.png",
+    video: "https://www.youtube.com/embed/L0CCNKdesjU",
+    description:
+      "This video shows some vulnerabilities in NCH software and provides guidance for developers to test their products before release.",
+  },
+  {
+    id: 4,
+    category: "Security",
+    title: "Icofx-Hacking",
+    img: "image/reverse.png",
+    video: "https://www.youtube.com/embed/84IcqSuBmvg",
+    description:
+      "This video demonstrates some vulnerabilities in ICOFX software. While its security is better than NCH, there are still weaknesses.",
+  },
+  {
+    id: 5,
+    category: "Animation",
+    title: "Water-Stream",
+    img: "image/water.png",
+    description: "Unavailable Due To Copyright Issue.",
+  },
+  {
+    id: 6,
+    category: "Animation",
+    title: "Art Collection",
+    img: "image/apple.jpg",
+    detailsImg: ["image/apple.jpg", "image/poster.jpg"],
+  },
+];
 
 const Portfolio = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const openModal = (project) => {
+    setSelectedProject(project);
+    document.body.classList.add("modal-open"); // Prevent scrolling on main page
+  };
+
+  const closeModal = () => {
+    setSelectedProject(null);
+    document.body.classList.remove("modal-open"); // Re-enable scrolling on main page
+  };
+
   return (
-    <section class="portfolio section" id="portfolio">
-      <div class="container flex-center">
-        <h1 class="section-title-01">Portfolio</h1>
-        <h2 class="section-title-02">Portfolio</h2>
-        <div class="content">
-          <div class="portfolio-list">
-            <div class="img-card-container">
-              <div class="img-card">
-                <div class="overlay"></div>
-                <div class="info">
-                  <h3>Web Design</h3>
-                  <span>AirBnB Clone</span>
-                </div>
-                <img src="image/hbhb-4.png" alt="" />
-              </div>
-              <div class="portfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Web Design</h3>
-                  <img src="image/hbhb.png" alt="" />
-                  <p>
-                    AirBnB clone is one of the portfolio project of Alx. with
-                    backend (python console, flask APi, json and mysql, flask
-                    frame-work). you can get the source code of the project at{" "}
-                    <a href="https://github.com/mckienzie7/AirBnB_clone_v4">
-                      here.
-                    </a>
-                  </p>
+    <section className="portfolio section" id="portfolio">
+      <div className="container flex-center">
+        <h1 className="section-title-01">Portfolio</h1>
+        <h2 className="section-title-02">Portfolio</h2>
+        <div className="content">
+          <div className="portfolio-list">
+            {projects.map((project) => (
+              <div key={project.id} className="img-card-container">
+                <div className="img-card" onClick={() => openModal(project)}>
+                  <div className="overlay"></div>
+                  <div className="info">
+                    <h3>{project.category}</h3>
+                    <span>{project.title}</span>
+                  </div>
+                  <img src={project.img} alt={project.title} />
                 </div>
               </div>
-            </div>
-            <div class="img-card-container">
-              <div class="img-card">
-                <div class="overlay"></div>
-                <div class="info">
-                  <h3>Event Addis</h3>
-                  <span>Event Managment Web App</span>
-                </div>
-                <img src="image/evtemplate.png.png" alt="" />
-              </div>
-              <div class="portfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Event Addis</h3>
-                  <iframe
-                    width="942"
-                    height="530"
-                    src="https://www.youtube.com/embed/Uie77sbwWzE?si=zHuqyPRiUwPCr_8h"
-                    title="What G-12 Examination looks like."
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                  <p>
-                    Event Addis is an event management platform that streamlines
-                    event creation, discovery, and participation for users in
-                    Addis Ababa.
-                    <a href="https://github.com/mckienzie7/Event-Addis">
-                      Github.
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="img-card-container">
-              <div class="img-card">
-                <div class="overlay"></div>
-                <div class="info">
-                  <h3>security</h3>
-                  <span>NCH Softwares-Hacking</span>
-                </div>
-                <img src="image/chips.png" alt="" />
-              </div>
-              <div class="portfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Cracking</h3>
-                  <iframe
-                    width="942"
-                    height="530"
-                    src="https://www.youtube.com/embed/L0CCNKdesjU"
-                    title="how to hack software"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                  <p>
-                    This video shows some vulnerability of NCH software, also
-                    guide for other developer to test their product before
-                    releasing it.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="img-card-container">
-              <div class="img-card">
-                <div class="overlay"></div>
-                <div class="info">
-                  <h3>Security</h3>
-                  <span>Icofx-Hacking</span>
-                </div>
-                <img src="image/reverse.png" alt="" />
-              </div>
-              <div class="portfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Cracking</h3>
-                  <iframe
-                    width="942"
-                    height="530"
-                    src="https://www.youtube.com/embed/84IcqSuBmvg"
-                    title="crack like pro (don't waste your money)."
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                  <p>
-                    This video shows some vulnerability of ICOFX software , it's
-                    security is better than NCH yet their is some vulnerability.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="img-card-container">
-              <div class="img-card">
-                <div class="overlay"></div>
-                <div class="info">
-                  <h3>Animation</h3>
-                  <span>Water-Stream</span>
-                </div>
-                <img src="image/water.png" alt="" />
-              </div>
-              <div class="portfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Animation</h3>
-                  <img src="" alt="" />
-                  <p>Unavailable Due To Copyright Issue.</p>
-                </div>
-              </div>
-            </div>
-            <div class="img-card-container">
-              <div class="img-card">
-                <div class="overlay"></div>
-                <div class="info">
-                  <h3>Animation</h3>
-                  <span>Art Collection</span>
-                </div>
-                <img src="image/apple.jpg" alt="" />
-              </div>
-              <div class="portfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Animated Art</h3>
-                  <img src="image/apple.jpg" alt="" />
-                  <img src="image/poster.jpg" alt="" />
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
+
+      {selectedProject && (
+        <div className="portfolio-modal-overlay">
+          <div className="portfolio-modal">
+            <button className="close-button" onClick={closeModal}>
+              ×
+            </button>
+            <h3>{selectedProject.category}</h3>
+            <h2>{selectedProject.title}</h2>
+            {selectedProject.detailsImg ? (
+              Array.isArray(selectedProject.detailsImg) ? (
+                selectedProject.detailsImg.map((img, index) => (
+                  <img key={index} src={img} alt="Project details" />
+                ))
+              ) : (
+                <img src={selectedProject.detailsImg} alt="Project details" />
+              )
+            ) : null}
+            {selectedProject.video && (
+              <iframe
+                width="942"
+                height="530"
+                src={selectedProject.video}
+                title={selectedProject.title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            )}
+            <p>{selectedProject.description}</p>
+            {selectedProject.link && (
+              <a
+                href={selectedProject.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
+            )}
+          </div>
+        </div>
+      )}
     </section>
   );
 };
