@@ -1,15 +1,16 @@
+import { link } from "framer-motion/client";
 import React, { useState } from "react";
-
+import abc from "../assets/abc-book-store.png";
 const projects = [
   {
     id: 1,
     category: "Front-end Design",
     title: "ABC Book Store",
-    img: "image/hbhb-4.png",
-    detailsImg: "image/hbhb.png",
+
+    detailsImg: { abc },
     description:
       "ABC (American Book Center) book store clone is one of the portfolio projects of ALX. It features a backend with Python console, Flask API, JSON, MySQL, and Flask framework.",
-    link: "",
+    link: "https://github.com/Bereket-Eshete/ABC-Book-store",
   },
   {
     id: 2,
@@ -19,7 +20,7 @@ const projects = [
     video: "https://www.youtube.com/embed/Uie77sbwWzE",
     description:
       "Event Addis is an event management platform that streamlines event creation, discovery, and participation for users in Addis Ababa. Event Addis is an event management platform that streamlines event creation, discovery, and participation for users in Addis Ababa.",
-    link: "https://github.com/mckienzie7/Event-Addis",
+    link: "https://github.com/Bereket-Eshete/Real-estate-website",
   },
   {
     id: 3,
@@ -29,6 +30,7 @@ const projects = [
     video: "https://www.youtube.com/embed/L0CCNKdesjU",
     description:
       "This video shows some vulnerabilities in NCH software and provides guidance for developers to test their products before release.",
+    link: "https://github.com/Bereket-Eshete/Bank-Management-System",
   },
   {
     id: 4,
@@ -38,6 +40,7 @@ const projects = [
     video: "https://www.youtube.com/embed/84IcqSuBmvg",
     description:
       "This video demonstrates some vulnerabilities in ICOFX software. While its security is better than NCH, there are still weaknesses.",
+    link: "https://github.com/Bereket-Eshete/React-Project",
   },
   {
     id: 5,
@@ -45,6 +48,7 @@ const projects = [
     title: "Water-Stream",
     img: "image/water.png",
     description: "Unavailable Due To Copyright Issue.",
+    link: "https://github.com/Bereket-Eshete/prodigy-FS-01",
   },
   {
     id: 6,
@@ -52,6 +56,7 @@ const projects = [
     title: "Art Collection",
     img: "image/apple.jpg",
     detailsImg: ["image/apple.jpg", "image/poster.jpg"],
+    link: "https://github.com/Bereket-Eshete/PRODIGY-FS-02",
   },
 ];
 
@@ -83,7 +88,7 @@ const Portfolio = () => {
                     <h3>{project.category}</h3>
                     <span>{project.title}</span>
                   </div>
-                  <img src={project.img} alt={project.title} />
+                  <img src={abc} alt={project.title} />
                 </div>
               </div>
             ))}
@@ -102,10 +107,11 @@ const Portfolio = () => {
             {selectedProject.detailsImg ? (
               Array.isArray(selectedProject.detailsImg) ? (
                 selectedProject.detailsImg.map((img, index) => (
-                  <img key={index} src={img} alt="Project details" />
+                  <img key={index} src={abc} alt="Project details" />
                 ))
               ) : (
-                <img src={selectedProject.detailsImg} alt="Project details" />
+                <img src={abc} alt="project details" />
+                // <img src={selectedProject.detailsImg} alt="Project details" />
               )
             ) : null}
             {selectedProject.video && (
