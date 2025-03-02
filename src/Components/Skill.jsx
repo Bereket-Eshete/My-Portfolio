@@ -57,18 +57,11 @@ const Skill = () => {
             </h4>
             <ul class="edu-list">
               <li class="item">
-                <span class="year">2021-2026</span>
+                <span class="year">2022-2026</span>
                 <p>
                   <span>BSC in Computer Science</span>
                 </p>
                 <p>Unity Unversity, Addis Ababa, Ethiopia</p>
-              </li>
-              <li class="item">
-                <span class="year">2023-2024</span>
-                <p>
-                  <span>Full Stack Web Development | Back-End</span>
-                </p>
-                <p>Holberton School(alx)</p>
               </li>
             </ul>
             <br />
@@ -82,7 +75,7 @@ const Skill = () => {
                 <li class="item">
                   <span class="year">2024</span>
                   <p>
-                    <span>Back-End Developer</span> - Holberton School(alx)
+                    <span>Android Developer</span> - Udacity
                   </p>
                 </li>
               </ul>

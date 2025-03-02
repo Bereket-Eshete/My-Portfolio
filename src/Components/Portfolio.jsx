@@ -3,18 +3,18 @@ import React, { useState } from "react";
 const projects = [
   {
     id: 1,
-    category: "Web Design",
-    title: "AirBnB Clone",
+    category: "Front-end Design",
+    title: "ABC Book Store",
     img: "image/hbhb-4.png",
     detailsImg: "image/hbhb.png",
     description:
-      "AirBnB clone is one of the portfolio projects of ALX. It features a backend with Python console, Flask API, JSON, MySQL, and Flask framework.",
-    link: "https://github.com/mckienzie7/AirBnB_clone_v4",
+      "ABC (American Book Center) book store clone is one of the portfolio projects of ALX. It features a backend with Python console, Flask API, JSON, MySQL, and Flask framework.",
+    link: "",
   },
   {
     id: 2,
     category: "Event Addis",
-    title: "Event Management Web App",
+    title: "Real State Web App",
     img: "image/evtemplate.png",
     video: "https://www.youtube.com/embed/Uie77sbwWzE",
     description:
