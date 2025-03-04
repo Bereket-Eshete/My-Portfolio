@@ -12,14 +12,19 @@ import forgate from "../assets/forgate.png";
 const projects = [
   {
     id: 1,
-    category: "Security",
-    title: "Authentication App",
-    img: Sign,
-    detailsImg: [login, verfy, forgate],
-    description:
-      "ABC (American Book Center) book store clone is one of the portfolio projects of ALX. It features a backend with Python console, Flask API, JSON, MySQL, and Flask framework.",
-    link: "https://github.com/Bereket-Eshete/ABC-Book-store",
+    category: "Full-Stack Development",
+    title: "Authentication System",
+    img: Sign, // Ensure abc is properly imported
+    detailsImg: [login, verfy, forgate], // Update with the correct image path
+    description: `This authentication system provides a secure and robust user authentication mechanism with features such as Signup, Login, Logout, Password Reset, Forgot Password, and Email Verification.  The project was a great learning experience where I explored various security best practices to enhance user authentication and data protection. I implemented JWT (JSON Web Token) and cookie-based sessions for secure authentication and session management.
+                   I used those Tech Stack for this project`,
+    technologies: `React.js (Frontend) 
+       Node.js & Express.js (Backend)
+       MongoDB & Mongoose (Database)
+       JWT & Cookie Sessions (Security)`,
+    link: "https://github.com/Bereket-Eshete/Authentication-System",
   },
+
   {
     id: 2,
     category: "Full-Stack project",
@@ -137,6 +142,7 @@ const Portfolio = () => {
               // ></iframe>
             )} */}
             <p>{selectedProject.description}</p>
+            <p>{selectedProject.technologies}</p>
             {selectedProject.link && (
               <a
                 href={selectedProject.link}
