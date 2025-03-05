@@ -12,7 +12,7 @@ import forgate from "../assets/forgate.png";
 const projects = [
   {
     id: 1,
-    category: "Full-Stack Development",
+    category: "Security",
     title: "Authentication System",
     img: Sign, // Ensure abc is properly imported
     detailsImg: [login, verfy, forgate], // Update with the correct image path
@@ -27,50 +27,55 @@ const projects = [
 
   {
     id: 2,
-    category: "Full-Stack project",
-    title: "Real State Web App",
+    category: "Front-end Development",
+    title: "ABC Book Store",
     img: abc,
     detailsImg: abc,
     // video: "https://www.youtube.com/embed/Uie77sbwWzE",
-    description:
-      "Event Addis is an event management platform that streamlines event creation, discovery, and participation for users in Addis Ababa. Event Addis is an event management platform that streamlines event creation, discovery, and participation for users in Addis Ababa.",
+    description: `This project is a frontend clone of the popular American Book Center (ABC) Book Store website. it was built using HTML, CSS and JavaScript focusing on replicating the design and the user experience of the original site. Through this project, i practiced essiential frontend development techniques including 
+    CSS styling: implementing Flexbox and CSS Grid for layout structuring
+    Respomsive Design: Ensuring the website adapts to diffrenet screnn size
+    JavaScript Interactivity: Adding dynamic elements and enhancing the user experience.
+    As my first frontend design project this was a valuable learning experience where i strengthened my understanding of modern styling techinques and frontend development best practices. `,
     link: "https://github.com/Bereket-Eshete/Real-estate-website",
   },
   {
     id: 3,
-    category: "Security",
-    title: "NCH Softwares-Hacking",
+    category: "Full-Stack Development",
+    title: "Real State Website",
     img: gift,
     detailsImg: gift,
     // video: "https://www.youtube.com/embed/L0CCNKdesjU",
-    description:
-      "This video shows some vulnerabilities in NCH software and provides guidance for developers to test their products before release.",
+    description: `This project is a fully functional realestate website designed to help users explore, list and manage properties online. it was built using a full stack development approche combining both frontend and backend technologies.This project also enhanced my full-stack development skill, practicularly in backend programing with PHP and database management using MySQL it also helped me understand how to integrate frontend and backend seamlessly for a smooth user experience.`,
     link: "https://github.com/Bereket-Eshete/Bank-Management-System",
   },
   {
     id: 4,
-    category: "Security",
-    title: "Icofx-Hacking",
+    category: "Front-end Development",
+    title: "React Project",
     img: todo,
     detailsImg: todo,
     // video: "https://www.youtube.com/embed/84IcqSuBmvg",
     description:
-      "This video demonstrates some vulnerabilities in ICOFX software. While its security is better than NCH, there are still weaknesses.",
+      "This To-Do App was my first project using React where i explored and applied key React cocnepts. it allows users to add,edit,and delete tasks making task management simple and efficient.",
     link: "https://github.com/Bereket-Eshete/React-Project",
   },
   {
     id: 5,
-    category: "Animation",
-    title: "Water-Stream",
+    category: "C++ Project",
+    title: "Bank Management System",
     img: bank,
     detailsImg: bank,
-    description: "Unavailable Due To Copyright Issue.",
+    description:
+      "This Bank Management System was developed using c++ as part of my computer programming course. The project aimed to simulate basic banking operations, allowing users to manage their accounts efficiently.",
     link: "https://github.com/Bereket-Eshete/prodigy-FS-01",
   },
   {
     id: 6,
-    category: "Animation",
-    title: "Art Collection",
+    category: "Front-end Development + API",
+    title: "Food Recipe",
+    description:
+      "This Food Recipe app is a frontend web application that allows users to search for diffrent food items and get their corresponding recipes. it was uniqe as it introduced me to API integration and handling real-time data.",
     img: food,
     detailsImg: food,
     link: "https://github.com/Bereket-Eshete/PRODIGY-FS-02",
@@ -141,7 +146,7 @@ const Portfolio = () => {
               //   allowFullScreen
               // ></iframe>
             )} */}
-            <p>{selectedProject.description}</p>
+            <p className="description">{selectedProject.description}</p>
             <p>{selectedProject.technologies}</p>
             {selectedProject.link && (
               <a
