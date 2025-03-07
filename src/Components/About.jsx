@@ -102,7 +102,8 @@ const About = () => {
               </li>
             </ul>
             <a
-              href="https://drive.google.com/file/d/1yK9PvJs8iBoAnD1V5FTo2VWZyEY4tzmS/view?usp=sharing"
+              href="/Bereket Eshete_CV.pdf"
+              download="Bereket Eshete_CV.pdf"
               className="btn"
             >
               Download Cv <FaDownload />

@@ -45,7 +45,11 @@ const Home = () => {
           <img src={profile1} alt="profile" />
         </div>
       </div>
-      <a href="#about" class="scroll-down">
+      <a
+        href="/Bereket Eshete_CV.pdf"
+        class="scroll-down"
+        download="Bereket Eshete_CV.pdf"
+      >
         Scroll Down <FaArrowDown color="#59d187" />
       </a>
     </section>
