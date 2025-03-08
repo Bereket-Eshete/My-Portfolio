@@ -3,7 +3,7 @@ import Sign from "../assets/Sign.png";
 import login from "../assets/login.png";
 import gift from "../assets/gift.png";
 import todo from "../assets/todo.png";
-import bank from "../assets/bank.png";
+import bank from "../assets/Bank.png";
 import food from "../assets/food.png";
 import verfy from "../assets/verfy.png";
 import forgate from "../assets/forgate.png";
@@ -12,8 +12,8 @@ const projects = [
     id: 1,
     category: "Security",
     title: "Authentication System",
-    img: Sign, // Ensure abc is properly imported
-    detailsImg: [login, verfy, forgate], // Update with the correct image path
+    img: Sign,
+    detailsImg: [login, verfy, forgate],
     description: `This authentication system provides a secure and robust user authentication mechanism with features such as Signup, Login, Logout, Password Reset, Forgot Password, and Email Verification.  The project was a great learning experience where I explored various security best practices to enhance user authentication and data protection. I implemented JWT (JSON Web Token) and cookie-based sessions for secure authentication and session management.
                    I used those Tech Stack for this project`,
     technologies: `React.js (Frontend) 

@@ -5,13 +5,12 @@ import { FaDownload } from "react-icons/fa";
 
 const About = () => {
   useEffect(() => {
-    // ScrollReveal configuration to trigger animations on scroll
     ScrollReveal().reveal(
       ".home .info h2, .section-title-01, .section-title-02",
       {
         delay: 300,
         origin: "left",
-        reset: false, // Ensures animation happens every time we scroll
+        reset: false,
       }
     );
     ScrollReveal().reveal(".home .info h3, .home .info p, .about-info .btn", {
@@ -65,7 +64,7 @@ const About = () => {
       interval: 100,
       reset: false,
     });
-  }, []); // Empty dependency array ensures this effect runs only once after the component mounts
+  }, []);
 
   return (
     <section className="about section" id="about">
