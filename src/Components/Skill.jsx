@@ -57,7 +57,7 @@ const Skill = () => {
             </h4>
             <ul class="edu-list">
               <li class="item">
-                <span class="year">2022-2026</span>
+                <span class="year">2022-Present</span>
                 <p>
                   <span>BSC in Computer Science</span>
                 </p>
